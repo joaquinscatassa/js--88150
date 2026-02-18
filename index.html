@@ -2,23 +2,42 @@
 <html lang="es">
 <head>
    <meta charset="UTF-8">
-   <title>Simulador de Rutinas - Entrega 1 JS</title>
+   <title>Simulador de Rutinas - Entrega 2</title>
+   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-   <h1>Simulador de Rutinas de Entrenamiento</h1>
+   <header>
+      <h1>Simulador de Rutinas</h1>
+      <p>Generá tu rutina personalizada según tu objetivo.</p>
+   </header>
 
-   <p>
-      Este simulador permite al usuario generar una rutina básica de entrenamiento
-      según su objetivo principal. A través de cuadros de diálogo y la consola de JavaScript,
-      el usuario ingresa sus datos y recibe una recomendación personalizada.
-   </p>
+   <main>
 
-   <p>
-      El funcionamiento se realiza íntegramente mediante prompts, alerts y la consola,
-      priorizando la lógica en JavaScript por sobre el diseño visual.
-   </p>
+      <section class="form-section">
+            <form id="formRutina">
+               <input type="text" id="nombre" placeholder="Ingresá tu nombre" required>
 
-   <script src="./main.js"></script>
+               <select id="objetivo" required>
+                  <option value="">Seleccionar objetivo</option>
+                  <option value="fuerza">Fuerza</option>
+                  <option value="hipertrofia">Hipertrofia</option>
+                  <option value="resistencia">Resistencia</option>
+               </select>
+
+               <button type="submit">Generar Rutina</button>
+            </form>
+      </section>
+
+      <section id="resultado" class="resultado-section"></section>
+
+      <section class="historial-section">
+            <h2>Rutinas Guardadas</h2>
+            <div id="historial"></div>
+      </section>
+
+   </main>
+
+   <script src="js/main.js"></script>
 </body>
 </html>
