@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <title>FitStore PRO</title>
+   <link rel="stylesheet" href="css/style.css">
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+<header>
+   <h1>FitStore PRO</h1>
+
+   <select id="filtroCategoria">
+      <option value="todos">Todas las categorías</option>
+      <option value="Fuerza">Fuerza</option>
+      <option value="Hipertrofia">Hipertrofia</option>
+      <option value="Resistencia">Resistencia</option>
+      <option value="Premium">Premium</option>
+   </select>
+
+   <button id="verCarrito">
+      🛒 Carrito (<span id="contador">0</span>)
+   </button>
+</header>
+
+<main>
+   <section id="productos" class="grid"></section>
+</main>
+
+<script src="js/main.js"></script>
+</body>
+</html>
