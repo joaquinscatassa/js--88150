@@ -1,0 +1,26 @@
+[
+{
+   "id": 1,
+   "nombre": "Plan Fuerza Pro",
+   "precio": 15000,
+   "categoria": "Fuerza"
+},
+{
+   "id": 2,
+   "nombre": "Plan Hipertrofia Avanzada",
+   "precio": 18000,
+   "categoria": "Hipertrofia"
+},
+{
+   "id": 3,
+   "nombre": "Plan Definición Total",
+   "precio": 14000,
+   "categoria": "Resistencia"
+},
+{
+   "id": 4,
+   "nombre": "Coaching Personalizado",
+   "precio": 30000,
+   "categoria": "Premium"
+}
+]
